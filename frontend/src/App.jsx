@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import './index.css'
 import Hero from './components/Hero'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="min-h-screen bg-gray-100">
       <Hero />
+      <Experience />
+      <Contact/>
     </div>
   )
 }

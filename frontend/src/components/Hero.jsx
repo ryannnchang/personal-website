@@ -3,7 +3,7 @@ import profileImage from '../assets/profile.jpeg';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <div className=" flex flex-col items-center justify-center text-center pt-24 pb-20 px-6">
       <img
         src={profileImage}
         alt="Ryan Chang"

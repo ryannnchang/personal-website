@@ -58,22 +58,25 @@ const Contact = () => {
       
       <form onSubmit={handleSubmit} className='flex items-center justify-center flex-col w-full max-w-5xl'>
 
-        <input
-        className="border border-gray-300 outline outline-1 outline-gray-500 mb-4 px-3 py-2 rounded w-full mb-6 mx-auto"
-        type="text"
-        id="simple-input"
-        value={inputName}
-        onChange={handleChangeName}
-        placeholder="Enter Name Here"
-        />
-        <input
-          className="border border-gray-300 outline outline-1 outline-gray-500 mb-4 px-3 py-2 rounded w-full mb-6 mx-auto"
+        <div className='flex items-center w-full'>
+          <input
+          className="border border-gray-300 outline outline-1 outline-gray-500 mb-4 px-3 py-2 rounded w-1/3 mb-6 mr-4"
           type="text"
           id="simple-input"
-          value={inputValue}
-          onChange={handleChange}
-          placeholder="Enter Email Here"
-        />
+          value={inputName}
+          onChange={handleChangeName}
+          placeholder="Enter Name Here"
+          />
+          <input
+            className="border border-gray-300 outline outline-1 outline-gray-500 mb-4 px-3 py-2 rounded w-2/3 mb-6"
+            type="text"
+            id="simple-input"
+            value={inputValue}
+            onChange={handleChange}
+            placeholder="Enter Email Here"
+          />
+        </div>
+        
         <textarea
           className="border border-gray-300 outline outline-1 outline-gray-500 mb-4 px-3 py-2 rounded w-full mb-3 mx-auto h-32 resize-none"
           id="message-input"
